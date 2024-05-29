@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css" />
+    <title>Iphone Clone</title>
+  </head>
+
+  <body>
+    <div class="iphone-frame">
+      <div class="norch">
+        <div class="rounded"></div>
+      </div>
+      <div class="nav">
+        <div class="left"></div>
+        <div class="right">
+          <ion-icon name="cellular"></ion-icon>
+          <ion-icon name="wifi"></ion-icon>
+          <ion-icon name="battery-half"></ion-icon>
+        </div>
+      </div>
+
+      <div class="AvaSoon">
+        <div class="MsgBox">Coming Soon!</div>
+      </div>
+
+      <div class="CalDiv">
+        <div class="EmptyDiv"></div>
+
+        <div class="AnswerBar">
+          <input class="Inputs" type="text" />
+        </div>
+
+        <div class="Line1 XY">
+          <button onclick="AllClear()" class="buttons no1 gray">AC</button>
+          <button onclick="Back()" class="buttons no2 gray">C</button>
+          <button onclick="Mod()" class="buttons no3 gray">%</button>
+          <button onclick="Div()" class="buttons no4 orange">/</button>
+        </div>
+
+        <div class="Line2 XY">
+          <button onclick="Sev()" class="buttons no5">7</button>
+          <button onclick="Eig()" class="buttons no6">8</button>
+          <button onclick="Nin()" class="buttons no7">9</button>
+          <button onclick="Mul()" class="buttons no8 orange">x</button>
+        </div>
+
+        <div class="Line3 XY">
+          <button onclick="Fou()" class="buttons no9">4</button>
+          <button onclick="Fiv()" class="buttons no10">5</button>
+          <button onclick="Six()" class="buttons no11">6</button>
+          <button onclick="Minus()" class="buttons no12 orange">-</button>
+        </div>
+
+        <div class="Line4 XY">
+          <button onclick="One()" class="buttons no13">1</button>
+          <button onclick="Two()" class="buttons no14">2</button>
+          <button onclick="Thr()" class="buttons no15">3</button>
+          <button onclick="Plus()" class="buttons no16 orange">+</button>
+        </div>
+
+        <div class="Line5 XY">
+          <button onclick="Zer()" class="buttons no17 LargeBt">0</button>
+          <button onclick="Dot()" class="buttons no18">.</button>
+          <button onclick="Equal()" class="buttons no19 orange">=</button>
+        </div>
+      </div>
+
+      <div class="app-container">
+        <!-- <div class="bg-img">
+          <div class="bg-frame">
+            <div class="extra"></div>
+            <div class="extra_2"></div>
+          </div>
+        </div> -->
+
+        <div class="bs1">
+          <img class="AppleImg" src="AppleBg.jpg" alt="" />
+        </div>
+
+        <div class="lock-screen active">
+          <div class="time">
+            <h1>9:45</h1>
+            <span>Saturday, October 29</span>
+          </div>
+          <div class="scr-lock-nav">
+            <div class="left">
+              <button class="r-deg">
+                <ion-icon name="flashlight"></ion-icon>
+              </button>
+            </div>
+            <div class="right">
+              <button>
+                <ion-icon name="camera"></ion-icon>
+              </button>
+            </div>
+          </div>
+          <div class="open-button" onclick="Checker()">click me to open</div>
+        </div>
+        <div class="application-menu">
+          <div class="applications">
+            <div id="slide_1" class="slide-1">
+              <div class="icon-sect">
+                <div class="icon">
+                  <button onclick="Coming()" class="facetime message">
+                    <ion-icon name="videocam"></ion-icon>
+                  </button>
+                  <label>FaceTime</label>
+                </div>
+
+                <div class="icon">
+                  <button onclick="Coming()" class="camera message">
+                    <ion-icon name="camera"></ion-icon>
+                  </button>
+                  <label>Camera</label>
+                </div>
+
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="bi-envelope-fill mail"
+                  ></button>
+                  <label>Mail</label>
+                </div>
+
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="bi-book-fill ibook"
+                  ></button>
+                  <label>ibook</label>
+                </div>
+              </div>
+
+              <div class="icon-sect">
+                <div class="icon">
+                  <button onclick="Coming()" class="itunestore">
+                    <ion-icon name="star"></ion-icon>
+                  </button>
+                  <label>ituneStore</label>
+                </div>
+
+                <div class="icon">
+                  <button onclick="Coming()" class="bi-apple apple-tv"></button>
+                  <label>Video</label>
+                </div>
+
+                <div class="icon">
+                  <button onclick="Coming()" class="appstore">
+                    <ion-icon name="logo-apple-appstore"></ion-icon>
+                  </button>
+                  <label>App Store</label>
+                </div>
+
+                <div class="icon">
+                  <button onclick="Coming()" class="phone-log">
+                    <ion-icon name="call"></ion-icon>
+                  </button>
+                  <label>Phone</label>
+                </div>
+              </div>
+
+              <div class="icon-sect">
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="bi-house-fill home"
+                  ></button>
+                  <label>Home</label>
+                </div>
+
+                <div class="icon">
+                  <button onclick="Coming()" class="itune music">
+                    <ion-icon name="musical-notes"></ion-icon>
+                  </button>
+
+                  <label>itune</label>
+                </div>
+
+                <div class="icon">
+                  <button onclick="Coming()" class="message">
+                    <ion-icon name="chatbubble"></ion-icon>
+                  </button>
+                  <label>Message</label>
+                </div>
+
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="bi-heart-fill health"
+                  ></button>
+                  <label>Health</label>
+                </div>
+              </div>
+
+              <div class="icon-sect">
+                <div class="icon">
+                  <button onclick="Coming()" class="xbox-app">
+                    <ion-icon name="logo-xbox"></ion-icon>
+                  </button>
+                  <label>Xbox</label>
+                </div>
+
+                <div class="icon">
+                  <button onclick="Coming()" class="playstation-app">
+                    <ion-icon name="logo-playstation"></ion-icon>
+                  </button>
+                  <label>Playstation</label>
+                </div>
+
+                <div class="icon">
+                  <button onclick="Coming()" class="messenger-app">
+                    <span class="bi-messenger"></span>
+                  </button>
+                  <label>Messenger</label>
+                </div>
+
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="bi-spotify spotify-app"
+                  ></button>
+                  <label>Spotify</label>
+                </div>
+              </div>
+            </div>
+            <div id="slide_2" class="slide-1 active-slide">
+              <div class="icon-sect">
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="facetime facebook-app bi-facebook"
+                  ></button>
+                  <label>Facebook</label>
+                </div>
+
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="instagram-app bi-instagram"
+                  ></button>
+                  <label>instagram</label>
+                </div>
+
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="twitter-app bi-twitter"
+                  ></button>
+                  <label>Twitter</label>
+                </div>
+
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="bi-pinterest pinterest-app"
+                  ></button>
+                  <label>Pinterest</label>
+                </div>
+              </div>
+              <div class="icon-sect">
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="facetime github-app bi-github"
+                  ></button>
+                  <label>Github</label>
+                </div>
+
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="youtube-app bi-youtube"
+                  ></button>
+                  <label>Youtube</label>
+                </div>
+
+                <div class="icon">
+                  <button
+                    onclick="Coming()"
+                    class="whatsapp-app bi-whatsapp"
+                  ></button>
+                  <label>Whatsapp</label>
+                </div>
+
+                <div class="icon">
+                  <button onclick="Coming()" class="snapchat-app">
+                    <ion-icon name="logo-snapchat"></ion-icon>
+                  </button>
+                  <label>Snapchat</label>
+                </div>
+              </div>
+
+              <div class="icon-sect1">
+                <div class="icon">
+                  <button class="calculator-app" onclick="Calculator()">
+                    <img class="Cal" src="Cal.png" alt="" />
+                  </button>
+                  <label>Calculator</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="indicators">
+            <span onclick="left()" class="active-screen span1"></span>
+            <span onclick="right()" class="span2"></span>
+          </div>
+          <div class="bottom-navigation">
+            <div onclick="Coming()" class="button-app phone-log">
+              <ion-icon name="call"></ion-icon>
+            </div>
+            <div onclick="Coming()" class="button-app music">
+              <ion-icon name="musical-notes"></ion-icon>
+            </div>
+            <div onclick="Coming()" class="button-app message">
+              <ion-icon name="chatbubble"></ion-icon>
+            </div>
+            <div onclick="Coming()" class="button-app appstore">
+              <ion-icon name="logo-apple-appstore"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button" onclick="Backs()"></div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
